@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <h2>Your Cart</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QHESyWlUrlO8noyzVc0lNBZJx4uNHYK4jX_sQaFrzA&s=10" alt="a picture of a coffee making machine" width="400" height="400">
+      <p>AO Coffee Making Machine</p>
+      <p>R10,800.00</p>
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <form action="">
+        <label for="card-name" id="card-name-label">Cardholder Name
+          <span aria-hidden="true">*</span>
+        </label>
+        <input 
+          id="card-name" 
+          type="text"
+          name="name"
+          placeholder="Name as it appears"
+          required
+          minlength="3">
+          <br>
+        <label for ="card-number" id="card-number-label">
+          Card Number
+          <span aria-hidden="true">*</span>
+        </label>
+        <input
+          id="card-number"
+          type="text"
+          name="card-number"
+          required
+          minlength="13"
+          maxlength="16">
+        <br>
+        <p id="card-number-help">Please enter our 16-digit card number without spaces or dashes</p>
+        <label for="expiry" id="expiry-label" aria-describedby="card-number-help">
+          Expiry Date
+          <span aria-hidden="true">*</span>
+        </label>
+        <input
+          id="expiry"
+          name="expiry"
+          type="number"
+          required
+          placeholder="MM/YY">
+        <br>
+        <label for="cvv" id="cvv">
+          CVV
+          <span aria-hidden="true">*</span>
+        </label>
+        <input
+          id="cvv"
+          name="cvv"
+          type="number"
+          required
+          minlength="3"
+          maxlength="3">
+        <br><br>
+        <button type="submit" id="order">Place Order</button>
+      </form>
+    </section>
+
+  </body>
+</html>
